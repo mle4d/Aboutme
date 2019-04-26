@@ -13,8 +13,19 @@ submitButton.addEventListener('click', () => {
   const kidsAnswer = kidsInput.value;
   const catsAnswer = catsInput.value;
   const foodAnswer = foodInput.value;
-  console.log('collect', collectAnswer);
-  console.log (collectInputAnswer, ageInputAnswer, kidInputAnswer, catsInputAnswer, foodInputAnswer);
+  
   const score = scoreAnswers(collectAnswer, ageAnswer, kidsAnswer, catsAnswer, foodAnswer);
-  const message = 'You got ' + score + '/5 correct';
+
+  const message = 'you got ' + score + '/5!';
+
+  quizResult.textContent = message;
+
+  if(score < 2) {
+      quizResult.classList.add('boo');
+      quizResult.classList.remove('yay');
+  }
+  else {
+      quizResult.classList.add('yay');
+      quizResult.classList.remove('boo');
+  }
 });

@@ -1,3 +1,17 @@
-li {
-	color: lightblue
+body {
+	background-color: aquamarine;
+}
+header{
+	background-color: aquamarine;
+	text-align: center;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 20px;
+	color: rgb(241, 150, 222);
+	padding: 4px;
+	width: 700px;
+	border-color: pink;
+	border-width: 4px;
+}
+section {
+	text-align: right;
 }

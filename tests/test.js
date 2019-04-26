@@ -37,5 +37,18 @@ test('all mixed-case answers right is 5', (assert) => {
 
     const score = scoreAnswers(collectAnswer, ageAnswer, kidsAnswer, catsAnswer, foodAnswer);
     assert.equal(score, expected);
+
+    const message = 'you got ' + score + '/5!';
+
+    quizResult.textContent = mesage;
+
+    if(score <2) {
+        quizResult.classList.add('boo');
+        quizResult.classList.remove('yay');
+    }
+    else {
+        quizResult.classList.add('yay');
+        quizResult.classList.remove('boo');
+    }
 });
 

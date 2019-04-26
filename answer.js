@@ -6,7 +6,6 @@ catsAnswer = catsAnswer.toLowerCase();
 foodAnswer = foodAnswer.toLowerCase();
 
 let score = 0;
-console.log('from answer function', ageAnswer)
     if(collectAnswer === 'pony') {
         score += 1;
     }
