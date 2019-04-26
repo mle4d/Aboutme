@@ -1,11 +1,11 @@
 function scoreAnswers(collectAnswer, ageAnswer, kidsAnswer, catsAnswer, foodAnswer){
-collectAnswer = collectAnswer.toLowerCase();
-//ageAnswer = ageAnswer.toLowerCase();
-kidsAnswer = kidsAnswer.toLowerCase();
-catsAnswer = catsAnswer.toLowerCase();
-foodAnswer = foodAnswer.toLowerCase();
+    collectAnswer = collectAnswer.toLowerCase();
+    //ageAnswer = ageAnswer.toLowerCase();
+    kidsAnswer = kidsAnswer.toLowerCase();
+    catsAnswer = catsAnswer.toLowerCase();
+    foodAnswer = foodAnswer.toLowerCase();
 
-let score = 0;
+    let score = 0;
     if(collectAnswer === 'pony') {
         score += 1;
     }
